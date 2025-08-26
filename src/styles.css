@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --white: #FAF7F0;
+  --beige: #D8D2C2;
+  --brown: #B17457;
+  --dark: #4A4947;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
