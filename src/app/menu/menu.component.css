@@ -1,0 +1,24 @@
+div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: min(20%, 50px);
+  margin-inline: 10px;
+  text-align: center;
+}
+h1 {
+  margin-block: 20px;
+}
+
+p {
+  margin-block: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--brown);
+}

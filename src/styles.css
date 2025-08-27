@@ -4,6 +4,7 @@
   --beige: #D8D2C2;
   --brown: #B17457;
   --dark: #4A4947;
+  --border-round: 5px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--white);
 }
