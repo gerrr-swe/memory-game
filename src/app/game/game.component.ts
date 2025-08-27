@@ -1,4 +1,6 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, computed, inject, input, signal } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { single } from 'rxjs';
 
 @Component({
   selector: 'app-game',
@@ -7,5 +9,11 @@ import { Component, computed, input } from '@angular/core';
   styleUrl: './game.component.css'
 })
 export class GamePage {
-  animal = input.required<string>();
+  private activatedRoute = inject(ActivatedRoute);
+  animal = signal('');
+  constructor () {
+    this.activatedRoute.params.subscribe( params => {
+      this.animal.set(params['animal']);
+    });
+  }
 }

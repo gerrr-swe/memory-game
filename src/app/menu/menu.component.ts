@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ButtonComponent } from '../shared/button/button.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -8,7 +9,17 @@ import { ButtonComponent } from '../shared/button/button.component';
   styleUrl: './menu.component.css'
 })
 export class MenuPage {
+  private router = inject(Router);
+  
   cats() {
-    alert("cats!")
-  };
+    this.router.navigate(["/game", "cats"]);
+  }
+
+  dogs() {
+    this.router.navigate(["/game", "dogs"]);
+  }
+
+  bears() {
+    this.router.navigate(["/game", "bears"]);
+  }
 }
