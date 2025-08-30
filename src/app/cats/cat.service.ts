@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Cat } from './cat.type';
+import { ImageService } from '../shared/imageService';
 
 @Injectable({
   providedIn: 'root'
 })
-export class CatService {
+export class CatService implements ImageService {
   private apiUrl = "https://cataas.com/api/cats?type=square&skip=0&limit=8";
   public images: string[] = [];
 
