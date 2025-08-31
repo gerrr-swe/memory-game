@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Cat } from './cat.type';
-import { ImageService } from '../shared/imageService';
+import { ImageService } from '../shared/ImageService';
 
 @Injectable({
   providedIn: 'root'
