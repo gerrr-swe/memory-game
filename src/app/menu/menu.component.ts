@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class MenuPage {
   private router = inject(Router);
-  
+
   cats() {
     this.router.navigate(["/game", "cats"]);
   }
@@ -19,7 +19,5 @@ export class MenuPage {
     this.router.navigate(["/game", "dogs"]);
   }
 
-  bears() {
-    this.router.navigate(["/game", "bears"]);
-  }
+
 }
